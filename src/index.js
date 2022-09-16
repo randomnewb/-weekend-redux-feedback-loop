@@ -37,6 +37,15 @@ const support = (state = "", action) => {
     }
     return state;
 };
+const comments = (state = "", action) => {
+    if (action.type === "SET_COMMENTS") {
+        return action.payload;
+    } //clear the state
+    else if (action.type === "CLEAR_ALL") {
+        return "";
+    }
+    return state;
+};
 
 // Keep track of all reducers below with a Redux store
 const storeInstance = createStore(
@@ -44,7 +53,7 @@ const storeInstance = createStore(
         feeling,
         understanding,
         support,
-        // comments,
+        comments,
     }),
     applyMiddleware(logger)
 );

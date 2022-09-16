@@ -10,7 +10,7 @@ const Support = () => {
         if (support === "") {
             alert("Input required!");
         } else {
-            history.push("/");
+            history.push("/comments");
         }
     };
 

@@ -4,6 +4,8 @@ import axios from "axios";
 import Feeling from "../Feeling/Feeling";
 import Understanding from "../Understanding/Understanding";
 import Support from "../Support/Support";
+import Comments from "../Comments/Comments";
+import Feedback from "../Feedback/Feedback";
 import "./App.css";
 
 function App() {
@@ -29,6 +31,16 @@ function App() {
                         exact
                         path="/support">
                         <Support />
+                    </Route>
+                    <Route
+                        exact
+                        path="/comments">
+                        <Comments />
+                    </Route>
+                    <Route
+                        exact
+                        path="/feedback">
+                        <Feedback />
                     </Route>
                 </div>
             </Router>

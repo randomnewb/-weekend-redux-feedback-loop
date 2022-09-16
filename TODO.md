@@ -58,19 +58,19 @@
 
 #### Imports
 
--   [] useSelector, useDispatch - react-redux
--   [] useHistory - react-router-dom
+-   [x] useSelector, useDispatch - react-redux
+-   [x] useHistory - react-router-dom
 
 #### Inside Component
 
--   [] Input (text) not required (validation)
--   [] Button to go to next page
--   [] store
--   [] dispatch (type: 'SET_COMMENT')
+-   [x] Input (text) not required (validation)
+-   [x] Button to go to next page
+-   [x] store
+-   [x] dispatch (type: 'SET_COMMENT')
 
 #### Router
 
--   [] /comments
+-   [x] /comments
 
 ## Review Feedback (Step 5/5) - Review.jsx
 

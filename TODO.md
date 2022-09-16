@@ -4,19 +4,19 @@
 
 #### Imports
 
--   [] useSelector, useDispatch - react-redux
--   [] useHistory - react-router-dom
+-   [x] useSelector, useDispatch - react-redux
+-   [x] useHistory - react-router-dom
 
 #### Inside Component
 
--   [] Input (number) - required (validation)
--   [] Button to go to next page
--   [] store
--   [] dispatch (type: 'SET_FEELING')
+-   [x] Input (number) - required (validation)
+-   [x] Button to go to next page
+-   [x] store
+-   [x] dispatch (type: 'SET_FEELING')
 
 #### Router
 
--   [] /feeling
+-   [x] /feeling
 
 ## How well are you understanding the content? (Step 2/5) - Understanding.jsx
 
@@ -109,6 +109,14 @@
 ## Header.jsx
 
 -   [] import Link and useLocation
+
+# Server Side
+
+## Axios requests
+
+## Server.js
+
+## feedback.router.js
 
 # Stretch Goals
 

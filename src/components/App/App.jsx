@@ -3,6 +3,7 @@ import React from "react";
 import axios from "axios";
 import Feeling from "../Feeling/Feeling";
 import Understanding from "../Understanding/Understanding";
+import Support from "../Support/Support";
 import "./App.css";
 
 function App() {
@@ -23,6 +24,11 @@ function App() {
                         exact
                         path="/understanding">
                         <Understanding />
+                    </Route>
+                    <Route
+                        exact
+                        path="/support">
+                        <Support />
                     </Route>
                 </div>
             </Router>

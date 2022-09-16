@@ -28,12 +28,22 @@ const understanding = (state = "", action) => {
     return state;
 };
 
+const support = (state = "", action) => {
+    if (action.type === "SET_SUPPORT") {
+        return action.payload;
+    } //clear the state
+    else if (action.type === "CLEAR_ALL") {
+        return "";
+    }
+    return state;
+};
+
 // Keep track of all reducers below with a Redux store
 const storeInstance = createStore(
     combineReducers({
         feeling,
         understanding,
-        // support,
+        support,
         // comments,
     }),
     applyMiddleware(logger)

@@ -2,30 +2,30 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 
-const Feeling = () => {
-    const feeling = useSelector((store) => store.feeling);
+const Support = () => {
+    const support = useSelector((store) => store.support);
     const dispatch = useDispatch();
 
     const validate = () => {
-        if (feeling === "") {
+        if (support === "") {
             alert("Input required!");
         } else {
-            history.push("/understanding");
+            history.push("/");
         }
     };
 
     const handleEvent = (e) => {
-        dispatch({ type: "SET_FEELING", payload: e.target.value });
+        dispatch({ type: "SET_SUPPORT", payload: e.target.value });
     };
 
     const history = useHistory();
 
     return (
         <>
-            <h4> How are you feeling today? </h4>
+            <h4> How well are you being supported? </h4>
             <div>
                 <input
-                    value={feeling}
+                    value={support}
                     onChange={handleEvent}
                     type="number"></input>
                 <button onClick={validate}>Next</button>
@@ -34,4 +34,4 @@ const Feeling = () => {
     );
 };
 
-export default Feeling;
+export default Support;

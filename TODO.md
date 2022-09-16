@@ -22,37 +22,37 @@
 
 #### Imports
 
--   [] useSelector, useDispatch - react-redux
--   [] useHistory - react-router-dom
+-   [x] useSelector, useDispatch - react-redux
+-   [x] useHistory - react-router-dom
 
 #### Inside Component
 
--   [] Input (number) required (validation)
--   [] Button to go to next page
--   [] store
--   [] dispatch (type: 'SET_UNDERSTANDING')
+-   [x] Input (number) required (validation)
+-   [x] Button to go to next page
+-   [x] store
+-   [x] dispatch (type: 'SET_UNDERSTANDING')
 
 #### Router
 
--   [] /understanding
+-   [x] /understanding
 
 ## How well are you being supported? (Step 3/5) - Support.jsx
 
 #### Imports
 
--   [] useSelector, useDispatch - react-redux
--   [] useHistory - react-router-dom
+-   [x] useSelector, useDispatch - react-redux
+-   [x] useHistory - react-router-dom
 
 #### Inside Component
 
--   [] Input (number) required (validation)
--   [] Button to go to next page
--   [] store
--   [] dispatch (type: 'SET_SUPPORT')
+-   [x] Input (number) required (validation)
+-   [x] Button to go to next page
+-   [x] store
+-   [x] dispatch (type: 'SET_SUPPORT')
 
 #### Router
 
--   [] /support
+-   [x] /support
 
 ## Any comments you want to leave? (Step 4/5) - Comments.jsx
 

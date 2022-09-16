@@ -2,7 +2,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 
-const Feeling = () => {
+const Understanding = () => {
     const understanding = useSelector((store) => store.understanding);
     const dispatch = useDispatch();
 
@@ -10,7 +10,7 @@ const Feeling = () => {
         if (understanding === "") {
             alert("Input required!");
         } else {
-            history.push("/");
+            history.push("/support");
         }
     };
 
@@ -34,4 +34,4 @@ const Feeling = () => {
     );
 };
 
-export default Feeling;
+export default Understanding;

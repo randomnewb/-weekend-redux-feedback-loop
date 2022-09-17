@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import "./Feedback.css";
+import Axios from "axios";
 
 const Feedback = () => {
     const history = useHistory();
@@ -12,7 +13,24 @@ const Feedback = () => {
 
     const submitFeedback = () => {
         console.log("Submitting feedback...");
-        history.push("/submit");
+        Axios({
+            method: "POST",
+            url: "/feedback",
+            data: {
+                feeling: feedback.feeling,
+                understanding: feedback.understanding,
+                support: feedback.support,
+                comments: feedback.comments,
+            },
+        })
+            .then((response) => {
+                dispatch({ type: "CLEAR_ALL" });
+                history.push("/submit");
+            })
+            .catch((error) => {
+                console.log(error);
+                alert("Something went wrong");
+            });
     };
 
     // Axios POST goes here

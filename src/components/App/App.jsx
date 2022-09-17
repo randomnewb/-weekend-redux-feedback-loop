@@ -6,6 +6,7 @@ import Understanding from "../Understanding/Understanding";
 import Support from "../Support/Support";
 import Comments from "../Comments/Comments";
 import Feedback from "../Feedback/Feedback";
+import Submit from "../Submit/Submit";
 import "./App.css";
 
 function App() {
@@ -41,6 +42,11 @@ function App() {
                         exact
                         path="/feedback">
                         <Feedback />
+                    </Route>
+                    <Route
+                        exact
+                        path="/submit">
+                        <Submit />
                     </Route>
                 </div>
             </Router>

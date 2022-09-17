@@ -12,7 +12,7 @@ const Feedback = () => {
 
     const submitFeedback = () => {
         console.log("Submitting feedback...");
-        history.push("/");
+        history.push("/submit");
     };
 
     // Axios POST goes here

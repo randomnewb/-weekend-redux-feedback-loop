@@ -76,47 +76,49 @@
 
 #### Imports
 
--   [] useSelector, useDispatch - react-redux
--   [] useHistory - react-router-dom
--   [] Axios - POST
+-   [x] useSelector, useDispatch - react-redux
+-   [x] useHistory - react-router-dom
+-   [x] Axios - POST
 
 #### Inside Component
 
--   [] Button to POST submission and go to next page
--   [] store - use store to append stored items to the DOM
+-   [x] Button to POST submission and clear Redux store and go to next page
+-   [x] store - use store to append stored items to the DOM
 
 #### Router
 
--   [] /review
+-   [x] /review
 
 ## Submission Page - Completed.jsx
 
--   [] Button (dispatch (type: 'CLEAR_ALL')) and submit new feedback
+-   [x] Button - return user to first page and to submit new feedback
 
 ## index.js
 
 #### Imports
 
--   [] React, ReactDOM, App, createStore, combineReducers, applyMiddleware, Provider, logger
--   [] Setup state/action functions
--   [] Redux store (createStore, combineReducers, applyMiddleware)
+-   [x] React, ReactDOM, App, createStore, combineReducers, applyMiddleware, Provider, logger
+-   [x] Setup state/action functions
+-   [x] Redux store (createStore, combineReducers, applyMiddleware)
 
 ## App.jsx
 
 -   [x] Import HashRouter, Components
--   [] Routers
-
-## Header.jsx
-
--   [] import Link and useLocation
+-   [x] Routers
 
 # Server Side
 
 ## Axios requests
 
+-   [x] POST
+
 ## Server.js
 
+-   [x] router.post
+
 ## feedback.router.js
+
+-   [x] setup feedback.router.js
 
 # Stretch Goals
 
@@ -135,3 +137,7 @@
 -   [] try to add an edit button with PUT request
 
 ## Styling with Material UI
+
+## Header.jsx
+
+-   [] import Link and useLocation
